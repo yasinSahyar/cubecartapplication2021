@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "username": "testautomation",
+      "password": "automation123!",
+      "userType": "Admin",
+      "version": "1.2"
+    },
+    {
+      "username": "testautomation1",
+      "password": "automation123!",
+      "userType": "Customer"
+    },
+    {
+      "username": "testautomation2",
+      "password": "automation123!",
+      "userType": "Manager"
+    }
+  ]
+}
