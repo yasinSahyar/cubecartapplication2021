@@ -1,6 +1,5 @@
 package com.seleniummaster.io;
 
-import com.sun.deploy.security.SelectableSecurityManager;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
