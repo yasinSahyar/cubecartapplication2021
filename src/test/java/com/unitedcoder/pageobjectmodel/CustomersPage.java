@@ -65,6 +65,24 @@ public class CustomersPage {
         saveButton.click();
     }
 
+
+    public void addCustomer(String firstName,String lastName,String email){
+        testUtility.waitForElementPresent(addCustomersButton);
+        addCustomersButton.click();
+        testUtility.waitForElementPresent(statusCheckBox);
+        statusCheckBox.click();
+        testUtility.waitForElementPresent(firstNameField);
+        firstNameField.sendKeys(firstName);
+        testUtility.waitForElementPresent(lastNameField);
+        lastNameField.sendKeys(lastName);
+        testUtility.waitForElementPresent(emailField);
+        emailField.sendKeys(email);
+        testUtility.waitForElementPresent(saveButton);
+        saveButton.click();
+    }
+
+
+
     public boolean verifyCustomerAddedSuccessfully(){
         testUtility.waitForElementPresent(successMesseage);
         return successMesseage.isDisplayed();

@@ -3,9 +3,14 @@ package com.seleniummaster.cubecartautomation;
 import com.seleniummaster.classtutorial.LoginUser;
 import com.seleniummaster.excel.ExcelUtility;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage extends TestBase {
+//
+//    public LoginPage(WebDriver driver) {
+//        super();
+//    }
 
     public void login(LoginUser loginUser){
         WebElement userNameElement= driver.findElement(By.name("username"));

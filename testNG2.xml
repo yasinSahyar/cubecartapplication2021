@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="Cubecart customer module Smoke Test" >
+        <classes>
+            <class name="com.unitedcoder.testngframework.TestNGDemo1">
+                <methods>
+                    <include name="viewCustomersTest"></include>
+                    <exclude name="deleteCustomersTest"></exclude>
+                </methods>
+            </class>
+            <class name="com.unitedcoder.testngframework.TestNGDemo2"></class>
+
+        </classes>
+    </test>
+
+    <test name="Cubecart Inventory module Regression Test">
+        <groups>
+            <run>
+                <include name="smoke test"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.unitedcoder.pageobjectmodel.TestRunner"></class>
+            <class name="com.unitedcoder.testngframework.DataProviderDemo"></class>
+
+        </classes>
+    </test>
+</suite>
