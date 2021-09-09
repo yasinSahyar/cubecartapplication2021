@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite thread-count="2" parallel="tests" verbose="1" name="suite1" >
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"></listener>
+        <listener class-name="org.testng.reporters.SuiteHTMLReporter"></listener>
+    </listeners>
+
+    <parameter name="url" value="http://cubecart.unitedcoderschool.com/ecommerce/admin_w4vqap.php"></parameter>
+    <parameter name="username" value="testautomation"></parameter>
+    <parameter name="password" value="automation123!"></parameter>
+    <test name="Cubecart customer module Smoke Test" >
+        <!--       <groups>-->
+        <!--           <run>-->
+        <!--&lt;!&ndash;               <include name="smoke test"/>&ndash;&gt;-->
+        <!--               <exclude name=""></exclude>-->
+        <!--           </run>-->
+        <!--       </groups>-->
+        <classes>
+            <!--            <class name="com.unitedcoder.testngframework.TestNGDemo1"></class>-->
+            <class name="com.unitedcoder.testngframework.ReadTestDataFromXMLFile"></class>
+        </classes>
+
+    </test>
+
+
+    <test name="Cubecart Regression Test">
+
+
+    <classes>
+
+    <class name="com.unitedcoder.testngframework.DataProviderDemo"/>
+
+</classes>
+
+
+    </test>
+</suite>
